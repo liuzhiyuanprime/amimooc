@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:hint="用户名"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_username" />
+
+    <CheckBox
+        android:id="@+id/login_remember"
+        android:layout_width="120dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="32dp"
+        android:checked="true"
+        android:text="记住密码"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
+
+    <Button
+        android:id="@+id/login_signin"
+        android:layout_width="233dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="32dp"
+        android:text="登录"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_remember" />
+
+    <Button
+        android:id="@+id/login_signup"
+        android:layout_width="105dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="44dp"
+        android:text="注册"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_signin" />
+
+</android.support.constraint.ConstraintLayout>
